@@ -26,6 +26,6 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
             </button>
         </form>
     )
-}
+} 
 
 export default AddItem
