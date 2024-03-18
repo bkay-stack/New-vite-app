@@ -17,11 +17,13 @@ function App() {
        try {
           const res = await fetch(API_URL);
           const listItems = await res.json();
-          setItems(listItems)
+          setItems(listItems);
        } catch (err) {
-
+           console.log(err.stack)
        }
      }
+
+     (async () =>  await  fetchItems())();
   }, [])
 
   const addItem = (item) => {
